@@ -35,6 +35,11 @@
 			<scope>provided</scope>
 			<type>zip</type>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>5.3.23</version>
+		</dependency>
 	</dependencies>
 
 	<build>
