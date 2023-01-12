@@ -13,7 +13,7 @@ common: &default_settings
   # account. For example, if your license key is 12345 use this:
   # license_key: '12345'
   # The key binds your agent's data to your account in the New Relic service.
-  license_key: ''
+  license_key: 'b352114cd15de4485ec2b9eda57d2ee72455NRAL'
 
   # Agent Enabled
   # Use this setting to disable the agent instead of removing it from the startup command.
@@ -47,7 +47,7 @@ common: &default_settings
   # Set to true to enable component-based transaction naming.
   # Set to false to use the URI of a web request as the name of the transaction.
   # Default is true.
-  enable_auto_transaction_naming: false
+  enable_auto_transaction_naming: true
 
   # The agent uses its own log file to keep its logging
   # separate from that of your application.  Specify the log level here.
@@ -327,14 +327,14 @@ common: &default_settings
     # This instrumentation reports the name of the user principal returned from
     # HttpServletRequest.getUserPrincipal() when servlets and filters are invoked.
     com.newrelic.instrumentation.servlet-user:
-      enabled: false
+      enabled: true
 
     com.newrelic.instrumentation.spring-aop-2:
-      enabled: false
+      enabled: true
 
     # This instrumentation reports metrics for resultset operations.
     com.newrelic.instrumentation.jdbc-resultset:
-      enabled: false
+      enabled: true
 
     # Classes loaded by classloaders in this list will not be instrumented.
     # This is a useful optimization for runtimes which use classloaders to
